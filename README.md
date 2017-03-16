@@ -72,5 +72,6 @@ async$ time python test.py 1000 > /dev/null
 2.221u 0.231s 2:03.71 1.9%  0+0k 49+0io 695pf+0w
 ```
 
-Almost 10 min vs 3
+Almost 10 min vs 2 min
+
 Now, lets say we have real application with millions requests per day. The payoff is obvious
