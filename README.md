@@ -8,7 +8,7 @@ But it requires to work carefully with even loop and code might be more complica
 In synchronous operations everything is simple, you have a code that working step by step
 On each operation your resources are blocked till that operation will not return control to the program
 
-img[src="https://docs.hhvm.com/s/0dd2cca2312e80ce/images/async/async-sequential.png"]
+![](https://docs.hhvm.com/s/0dd2cca2312e80ce/images/async/async-sequential.png)
 
 ## Asynchronous Execution
 
@@ -16,7 +16,7 @@ All Python code executes in the main request thread, but main advantage of async
 I/O does not block it, and multiple I/O or other async tasks can execute concurrently. 
 Usually 90% of the time program spends on I/O, database, network operations.
 
-img[src="https://docs.hhvm.com/s/20cc9b14a8f1c008/images/async/async-slow-curl.png"]
+![](https://docs.hhvm.com/s/20cc9b14a8f1c008/images/async/async-slow-curl.png)
 
 The reordering of different task instructions in this way allow you to hide I/O latency. So while one task is currently sitting at an I/O instruction (e.g., waiting for data), another task's instruction, with hopefully less latency, can execute in the meantime.
 
